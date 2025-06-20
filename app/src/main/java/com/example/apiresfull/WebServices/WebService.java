@@ -5,6 +5,8 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.example.apiresfull.LugaresTuristicos_Activity;
+
 import org.json.JSONException;
 
 import java.util.Map;
@@ -25,6 +27,9 @@ public class WebService extends AsyncTask<String, Long, String> {
 
     //Clase a la cual se le retorna los datos dle ws
     private Asynchtask callback=null;
+
+    public WebService(String url, Object o, Map<String, String> datos, LugaresTuristicos_Activity lugaresTuristicosActivity, LugaresTuristicos_Activity lugaresTuristicosActivity1) {
+    }
 
     public Asynchtask getCallback() {
         return callback;
